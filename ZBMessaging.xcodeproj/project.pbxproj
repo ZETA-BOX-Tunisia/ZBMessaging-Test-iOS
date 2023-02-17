@@ -7,15 +7,31 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7B7B67166EEC2AD7CEBF95AC /* Pods_ZBMessagingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF477999E3570B5C2747F030 /* Pods_ZBMessagingTests.framework */; };
+		A13BD77ED64E96E736BCAB9A /* Pods_ZBMessaging_ZBMessagingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604B9163BF7B53649B878B4D /* Pods_ZBMessaging_ZBMessagingUITests.framework */; };
 		B4A94BA1299FCDA000BC0186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BA0299FCDA000BC0186 /* AppDelegate.swift */; };
 		B4A94BA3299FCDA000BC0186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BA2299FCDA000BC0186 /* SceneDelegate.swift */; };
-		B4A94BA5299FCDA000BC0186 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BA4299FCDA000BC0186 /* ViewController.swift */; };
 		B4A94BA8299FCDA000BC0186 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A94BA6299FCDA000BC0186 /* Main.storyboard */; };
 		B4A94BAA299FCDA100BC0186 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B4A94BA9299FCDA100BC0186 /* Assets.xcassets */; };
 		B4A94BAD299FCDA100BC0186 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B4A94BAB299FCDA100BC0186 /* LaunchScreen.storyboard */; };
 		B4A94BB8299FCDA200BC0186 /* ZBMessagingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BB7299FCDA200BC0186 /* ZBMessagingTests.swift */; };
 		B4A94BC2299FCDA200BC0186 /* ZBMessagingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BC1299FCDA200BC0186 /* ZBMessagingUITests.swift */; };
 		B4A94BC4299FCDA200BC0186 /* ZBMessagingUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BC3299FCDA200BC0186 /* ZBMessagingUITestsLaunchTests.swift */; };
+		B4A94BE1299FD2E500BC0186 /* LoginScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BDF299FD2E400BC0186 /* LoginScreen.swift */; };
+		B4A94BE2299FD2E500BC0186 /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BE0299FD2E400BC0186 /* LoginViewModel.swift */; };
+		B4A94BE6299FD35B00BC0186 /* BindingTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BE4299FD35B00BC0186 /* BindingTextField.swift */; };
+		B4A94BE7299FD35B00BC0186 /* Dynamic.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BE5299FD35B00BC0186 /* Dynamic.swift */; };
+		B4A94BEC299FD42500BC0186 /* LoginUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BEA299FD42500BC0186 /* LoginUseCaseProtocol.swift */; };
+		B4A94BED299FD42500BC0186 /* LoginUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BEB299FD42500BC0186 /* LoginUseCaseImpl.swift */; };
+		B4A94BF2299FD45E00BC0186 /* AccountRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BF0299FD45E00BC0186 /* AccountRepositoryProtocol.swift */; };
+		B4A94BF3299FD45E00BC0186 /* AccountRepositoryImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BF1299FD45E00BC0186 /* AccountRepositoryImp.swift */; };
+		B4A94BF6299FDA6000BC0186 /* Models.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BF5299FDA6000BC0186 /* Models.swift */; };
+		B4A94BFA299FDA8500BC0186 /* AccountDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BF8299FDA8500BC0186 /* AccountDataSourceProtocol.swift */; };
+		B4A94BFB299FDA8500BC0186 /* AccountDataSourceImp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BF9299FDA8500BC0186 /* AccountDataSourceImp.swift */; };
+		B4A94BFE299FDAFE00BC0186 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BFD299FDAFE00BC0186 /* UIViewControllerExtension.swift */; };
+		B4A94C01299FDB5700BC0186 /* ZBFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B4A94C00299FDB5700BC0186 /* ZBFramework.framework */; };
+		B4A94C02299FDB5700BC0186 /* ZBFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = B4A94C00299FDB5700BC0186 /* ZBFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		B840A6791518F97FE1EFDD01 /* Pods_ZBMessaging.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 564FC9021D0CDECB7E9622DA /* Pods_ZBMessaging.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +51,28 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		B4A94C03299FDB5700BC0186 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B4A94C02299FDB5700BC0186 /* ZBFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		564FC9021D0CDECB7E9622DA /* Pods_ZBMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		604B9163BF7B53649B878B4D /* Pods_ZBMessaging_ZBMessagingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBMessaging_ZBMessagingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		ADBC8D4DA6E74CA3C2706A46 /* Pods-ZBMessaging-ZBMessagingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBMessaging-ZBMessagingUITests.release.xcconfig"; path = "Target Support Files/Pods-ZBMessaging-ZBMessagingUITests/Pods-ZBMessaging-ZBMessagingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		B19D1BEEA24095D1344F9445 /* Pods-ZBMessaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBMessaging.debug.xcconfig"; path = "Target Support Files/Pods-ZBMessaging/Pods-ZBMessaging.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A94B9D299FCDA000BC0186 /* ZBMessaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBMessaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A94BA0299FCDA000BC0186 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B4A94BA2299FCDA000BC0186 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B4A94BA4299FCDA000BC0186 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		B4A94BA7299FCDA000BC0186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B4A94BA9299FCDA100BC0186 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B4A94BAC299FCDA100BC0186 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -49,6 +82,24 @@
 		B4A94BBD299FCDA200BC0186 /* ZBMessagingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZBMessagingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		B4A94BC1299FCDA200BC0186 /* ZBMessagingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBMessagingUITests.swift; sourceTree = "<group>"; };
 		B4A94BC3299FCDA200BC0186 /* ZBMessagingUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBMessagingUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		B4A94BDF299FD2E400BC0186 /* LoginScreen.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginScreen.swift; sourceTree = "<group>"; };
+		B4A94BE0299FD2E400BC0186 /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		B4A94BE4299FD35B00BC0186 /* BindingTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BindingTextField.swift; sourceTree = "<group>"; };
+		B4A94BE5299FD35B00BC0186 /* Dynamic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dynamic.swift; sourceTree = "<group>"; };
+		B4A94BEA299FD42500BC0186 /* LoginUseCaseProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUseCaseProtocol.swift; sourceTree = "<group>"; };
+		B4A94BEB299FD42500BC0186 /* LoginUseCaseImpl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginUseCaseImpl.swift; sourceTree = "<group>"; };
+		B4A94BF0299FD45E00BC0186 /* AccountRepositoryProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRepositoryProtocol.swift; sourceTree = "<group>"; };
+		B4A94BF1299FD45E00BC0186 /* AccountRepositoryImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountRepositoryImp.swift; sourceTree = "<group>"; };
+		B4A94BF5299FDA6000BC0186 /* Models.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Models.swift; sourceTree = "<group>"; };
+		B4A94BF8299FDA8500BC0186 /* AccountDataSourceProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDataSourceProtocol.swift; sourceTree = "<group>"; };
+		B4A94BF9299FDA8500BC0186 /* AccountDataSourceImp.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountDataSourceImp.swift; sourceTree = "<group>"; };
+		B4A94BFD299FDAFE00BC0186 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		B4A94C00299FDB5700BC0186 /* ZBFramework.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = ZBFramework.framework; sourceTree = "<group>"; };
+		B56C27FB04F6999BC2A06FBF /* Pods-ZBMessaging-ZBMessagingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBMessaging-ZBMessagingUITests.debug.xcconfig"; path = "Target Support Files/Pods-ZBMessaging-ZBMessagingUITests/Pods-ZBMessaging-ZBMessagingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B6A15B2A2030181148B49429 /* Pods-ZBMessagingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBMessagingTests.release.xcconfig"; path = "Target Support Files/Pods-ZBMessagingTests/Pods-ZBMessagingTests.release.xcconfig"; sourceTree = "<group>"; };
+		B72AFA8341E55BF769915E78 /* Pods-ZBMessaging.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBMessaging.release.xcconfig"; path = "Target Support Files/Pods-ZBMessaging/Pods-ZBMessaging.release.xcconfig"; sourceTree = "<group>"; };
+		C20A435D0EA7280F51CB1E43 /* Pods-ZBMessagingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBMessagingTests.debug.xcconfig"; path = "Target Support Files/Pods-ZBMessagingTests/Pods-ZBMessagingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		EF477999E3570B5C2747F030 /* Pods_ZBMessagingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBMessagingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +107,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B4A94C01299FDB5700BC0186 /* ZBFramework.framework in Frameworks */,
+				B840A6791518F97FE1EFDD01 /* Pods_ZBMessaging.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -63,6 +116,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B7B67166EEC2AD7CEBF95AC /* Pods_ZBMessagingTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -70,12 +124,26 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A13BD77ED64E96E736BCAB9A /* Pods_ZBMessaging_ZBMessagingUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CFE5E4034CEE7BC4C6027C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B19D1BEEA24095D1344F9445 /* Pods-ZBMessaging.debug.xcconfig */,
+				B72AFA8341E55BF769915E78 /* Pods-ZBMessaging.release.xcconfig */,
+				B56C27FB04F6999BC2A06FBF /* Pods-ZBMessaging-ZBMessagingUITests.debug.xcconfig */,
+				ADBC8D4DA6E74CA3C2706A46 /* Pods-ZBMessaging-ZBMessagingUITests.release.xcconfig */,
+				C20A435D0EA7280F51CB1E43 /* Pods-ZBMessagingTests.debug.xcconfig */,
+				B6A15B2A2030181148B49429 /* Pods-ZBMessagingTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		B4A94B94299FCDA000BC0186 = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +151,8 @@
 				B4A94BB6299FCDA200BC0186 /* ZBMessagingTests */,
 				B4A94BC0299FCDA200BC0186 /* ZBMessagingUITests */,
 				B4A94B9E299FCDA000BC0186 /* Products */,
+				B4A94BFF299FDB5700BC0186 /* Frameworks */,
+				5CFE5E4034CEE7BC4C6027C8 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -99,9 +169,12 @@
 		B4A94B9F299FCDA000BC0186 /* ZBMessaging */ = {
 			isa = PBXGroup;
 			children = (
-				B4A94BA0299FCDA000BC0186 /* AppDelegate.swift */,
-				B4A94BA2299FCDA000BC0186 /* SceneDelegate.swift */,
-				B4A94BA4299FCDA000BC0186 /* ViewController.swift */,
+				B4A94BDA299FD1F500BC0186 /* Application */,
+				B4A94BDD299FD29D00BC0186 /* Data */,
+				B4A94BDC299FD28700BC0186 /* Domain */,
+				B4A94BDB299FD26B00BC0186 /* Presentation */,
+				B4A94BE3299FD33400BC0186 /* Helpers */,
+				B4A94BFC299FDADA00BC0186 /* Extensions */,
 				B4A94BA6299FCDA000BC0186 /* Main.storyboard */,
 				B4A94BA9299FCDA100BC0186 /* Assets.xcassets */,
 				B4A94BAB299FCDA100BC0186 /* LaunchScreen.storyboard */,
@@ -127,6 +200,129 @@
 			path = ZBMessagingUITests;
 			sourceTree = "<group>";
 		};
+		B4A94BDA299FD1F500BC0186 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BA0299FCDA000BC0186 /* AppDelegate.swift */,
+				B4A94BA2299FCDA000BC0186 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		B4A94BDB299FD26B00BC0186 /* Presentation */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BDE299FD2C700BC0186 /* Login */,
+			);
+			path = Presentation;
+			sourceTree = "<group>";
+		};
+		B4A94BDC299FD28700BC0186 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BF4299FDA6000BC0186 /* Models */,
+				B4A94BEE299FD45E00BC0186 /* Repository */,
+				B4A94BE8299FD40F00BC0186 /* UseCase */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		B4A94BDD299FD29D00BC0186 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BF7299FDA8500BC0186 /* AccountDataSource */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		B4A94BDE299FD2C700BC0186 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BDF299FD2E400BC0186 /* LoginScreen.swift */,
+				B4A94BE0299FD2E400BC0186 /* LoginViewModel.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		B4A94BE3299FD33400BC0186 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BE4299FD35B00BC0186 /* BindingTextField.swift */,
+				B4A94BE5299FD35B00BC0186 /* Dynamic.swift */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		B4A94BE8299FD40F00BC0186 /* UseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BE9299FD42500BC0186 /* LoginUseCase */,
+			);
+			path = UseCase;
+			sourceTree = "<group>";
+		};
+		B4A94BE9299FD42500BC0186 /* LoginUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BEA299FD42500BC0186 /* LoginUseCaseProtocol.swift */,
+				B4A94BEB299FD42500BC0186 /* LoginUseCaseImpl.swift */,
+			);
+			path = LoginUseCase;
+			sourceTree = "<group>";
+		};
+		B4A94BEE299FD45E00BC0186 /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BEF299FD45E00BC0186 /* AccountRepo */,
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		B4A94BEF299FD45E00BC0186 /* AccountRepo */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BF0299FD45E00BC0186 /* AccountRepositoryProtocol.swift */,
+				B4A94BF1299FD45E00BC0186 /* AccountRepositoryImp.swift */,
+			);
+			path = AccountRepo;
+			sourceTree = "<group>";
+		};
+		B4A94BF4299FDA6000BC0186 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BF5299FDA6000BC0186 /* Models.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		B4A94BF7299FDA8500BC0186 /* AccountDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BF8299FDA8500BC0186 /* AccountDataSourceProtocol.swift */,
+				B4A94BF9299FDA8500BC0186 /* AccountDataSourceImp.swift */,
+			);
+			path = AccountDataSource;
+			sourceTree = "<group>";
+		};
+		B4A94BFC299FDADA00BC0186 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94BFD299FDAFE00BC0186 /* UIViewControllerExtension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		B4A94BFF299FDB5700BC0186 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B4A94C00299FDB5700BC0186 /* ZBFramework.framework */,
+				564FC9021D0CDECB7E9622DA /* Pods_ZBMessaging.framework */,
+				604B9163BF7B53649B878B4D /* Pods_ZBMessaging_ZBMessagingUITests.framework */,
+				EF477999E3570B5C2747F030 /* Pods_ZBMessagingTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -134,9 +330,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A94BC7299FCDA200BC0186 /* Build configuration list for PBXNativeTarget "ZBMessaging" */;
 			buildPhases = (
+				285336911885238C9435CD2C /* [CP] Check Pods Manifest.lock */,
 				B4A94B99299FCDA000BC0186 /* Sources */,
 				B4A94B9A299FCDA000BC0186 /* Frameworks */,
 				B4A94B9B299FCDA000BC0186 /* Resources */,
+				B4A94C03299FDB5700BC0186 /* Embed Frameworks */,
+				783AB83D5BF98132A219BD7C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -151,6 +350,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A94BCA299FCDA200BC0186 /* Build configuration list for PBXNativeTarget "ZBMessagingTests" */;
 			buildPhases = (
+				59185087E022BB54F1BDDA42 /* [CP] Check Pods Manifest.lock */,
 				B4A94BAF299FCDA200BC0186 /* Sources */,
 				B4A94BB0299FCDA200BC0186 /* Frameworks */,
 				B4A94BB1299FCDA200BC0186 /* Resources */,
@@ -169,9 +369,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = B4A94BCD299FCDA200BC0186 /* Build configuration list for PBXNativeTarget "ZBMessagingUITests" */;
 			buildPhases = (
+				D758E32FCB578E0F68527092 /* [CP] Check Pods Manifest.lock */,
 				B4A94BB9299FCDA200BC0186 /* Sources */,
 				B4A94BBA299FCDA200BC0186 /* Frameworks */,
 				B4A94BBB299FCDA200BC0186 /* Resources */,
+				F90DEF536A6900F0C2E9357E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -253,13 +455,127 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		285336911885238C9435CD2C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZBMessaging-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		59185087E022BB54F1BDDA42 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZBMessagingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		783AB83D5BF98132A219BD7C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZBMessaging/Pods-ZBMessaging-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZBMessaging/Pods-ZBMessaging-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZBMessaging/Pods-ZBMessaging-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D758E32FCB578E0F68527092 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ZBMessaging-ZBMessagingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F90DEF536A6900F0C2E9357E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZBMessaging-ZBMessagingUITests/Pods-ZBMessaging-ZBMessagingUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ZBMessaging-ZBMessagingUITests/Pods-ZBMessaging-ZBMessagingUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ZBMessaging-ZBMessagingUITests/Pods-ZBMessaging-ZBMessagingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		B4A94B99299FCDA000BC0186 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B4A94BA5299FCDA000BC0186 /* ViewController.swift in Sources */,
+				B4A94BFA299FDA8500BC0186 /* AccountDataSourceProtocol.swift in Sources */,
+				B4A94BF6299FDA6000BC0186 /* Models.swift in Sources */,
+				B4A94BFB299FDA8500BC0186 /* AccountDataSourceImp.swift in Sources */,
+				B4A94BF3299FD45E00BC0186 /* AccountRepositoryImp.swift in Sources */,
+				B4A94BEC299FD42500BC0186 /* LoginUseCaseProtocol.swift in Sources */,
+				B4A94BE6299FD35B00BC0186 /* BindingTextField.swift in Sources */,
+				B4A94BF2299FD45E00BC0186 /* AccountRepositoryProtocol.swift in Sources */,
+				B4A94BE1299FD2E500BC0186 /* LoginScreen.swift in Sources */,
+				B4A94BE7299FD35B00BC0186 /* Dynamic.swift in Sources */,
 				B4A94BA1299FCDA000BC0186 /* AppDelegate.swift in Sources */,
+				B4A94BED299FD42500BC0186 /* LoginUseCaseImpl.swift in Sources */,
+				B4A94BE2299FD2E500BC0186 /* LoginViewModel.swift in Sources */,
+				B4A94BFE299FDAFE00BC0186 /* UIViewControllerExtension.swift in Sources */,
 				B4A94BA3299FCDA000BC0186 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -432,12 +748,17 @@
 		};
 		B4A94BC8299FCDA200BC0186 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B19D1BEEA24095D1344F9445 /* Pods-ZBMessaging.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5L6Q4RA7G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZBMessaging/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -460,12 +781,17 @@
 		};
 		B4A94BC9299FCDA200BC0186 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B72AFA8341E55BF769915E78 /* Pods-ZBMessaging.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = U5L6Q4RA7G;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = ZBMessaging/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
@@ -488,6 +814,7 @@
 		};
 		B4A94BCB299FCDA200BC0186 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = C20A435D0EA7280F51CB1E43 /* Pods-ZBMessagingTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -508,6 +835,7 @@
 		};
 		B4A94BCC299FCDA200BC0186 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B6A15B2A2030181148B49429 /* Pods-ZBMessagingTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -528,6 +856,7 @@
 		};
 		B4A94BCE299FCDA200BC0186 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B56C27FB04F6999BC2A06FBF /* Pods-ZBMessaging-ZBMessagingUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -546,6 +875,7 @@
 		};
 		B4A94BCF299FCDA200BC0186 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = ADBC8D4DA6E74CA3C2706A46 /* Pods-ZBMessaging-ZBMessagingUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

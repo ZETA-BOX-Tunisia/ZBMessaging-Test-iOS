@@ -1,0 +1,6 @@
+framework module Pods_ZBMessagingTests {
+  umbrella header "Pods-ZBMessagingTests-umbrella.h"
+
+  export *
+  module * { export * }
+}

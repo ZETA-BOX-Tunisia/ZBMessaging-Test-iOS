@@ -1,0 +1,11 @@
+framework module ZBFramework {
+  umbrella header "ZBFramework.h"
+
+  export *
+  module * { export * }
+}
+
+module ZBFramework.Swift {
+  header "ZBFramework-Swift.h"
+  requires objc
+}
