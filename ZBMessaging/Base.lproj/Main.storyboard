@@ -29,7 +29,7 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dk3-aB-WcN" customClass="BindingTextField" customModule="ZBMessagingExample" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Identifier" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dk3-aB-WcN" customClass="BindingTextField" customModule="ZBMessaging" customModuleProvider="target">
                                 <rect key="frame" x="24" y="319" width="345" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="fVH-Mj-5FK"/>
@@ -37,7 +37,7 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AyI-e6-qHD" customClass="BindingTextField" customModule="ZBMessagingExample" customModuleProvider="target">
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Password" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="AyI-e6-qHD" customClass="BindingTextField" customModule="ZBMessaging" customModuleProvider="target">
                                 <rect key="frame" x="24" y="394" width="345" height="55"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="j2Y-ri-4dv"/>

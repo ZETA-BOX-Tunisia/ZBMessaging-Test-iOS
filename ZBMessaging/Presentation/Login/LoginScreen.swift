@@ -46,10 +46,7 @@ class LoginScreenVC: UIViewController {
         nextBtn.layer.cornerRadius = 15
         identifierTxtField.setLeftPaddingPoints(10)
         passwordTextField.setLeftPaddingPoints(10)
-        identifierTxtField.text = "mikedavis@outlook.com"
-        passwordTextField.text = "123456789"
-        self.viewModel.identifierValue.value = "mikedavis@outlook.com"
-        self.viewModel.passwordValue.value = "123456789"
+        
         bindDataFromViewModel()
         
     }
@@ -92,7 +89,7 @@ class LoginScreenVC: UIViewController {
             if onSuccess == true {
                 DispatchQueue.main.async {
                     self.showOrHideLoader(done: true) {
-                      
+                        self.showAlert(title: "Login successful", message: "Hello. Welcome to the app!")
                     }
                 }
             }
