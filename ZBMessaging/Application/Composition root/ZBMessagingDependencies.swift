@@ -34,11 +34,19 @@ class ZBMessagingDependencies {
         let isLoggedIn:Bool = true
         
         if isLoggedIn {
-           
+            setRootViewController(LoginScreenVC())
         } else {
             
         }
 
+    }
+    
+    func makeLoginViewController() -> UIViewController {
+        let viewController = LoginScreenVC()
+        let navigationController = UINavigationController(rootViewController: viewController)
+        navigationController.title = "Login"
+        navigationController.tabBarController?.tabBar.tintColor = .red
+        return navigationController
     }
     
 }

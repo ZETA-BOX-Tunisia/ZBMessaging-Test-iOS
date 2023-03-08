@@ -10,8 +10,8 @@ import Combine
 import UIKit
 
 class LoginScreenVC: UIViewController {
-    
-    
+
+
     @IBOutlet weak var identifierTxtField: BindingTextField! {
         didSet {
             self.identifierTxtField.bind(callback: {self.viewModel.identifierValue.value = $0 })
@@ -23,34 +23,34 @@ class LoginScreenVC: UIViewController {
         }
     }
     @IBOutlet weak var nextBtn: UIButton!
-    
+
     var viewModel = LoginViewModel(loginUseCase: LoginUseCaseImpl(accountRepositoryProtocol: AccountRepositoryImpl(accountDataSourceProtocol: AccountDataSourceImpl())))
-    
+
     private var subsriptions = Set<AnyCancellable>()
-    
-    
-    
+
+
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         self.navigationController?.isNavigationBarHidden = true
 
     }
-    
+
     func initView() {
         nextBtn.layer.cornerRadius = 15
         identifierTxtField.setLeftPaddingPoints(10)
         passwordTextField.setLeftPaddingPoints(10)
-        
+
         bindDataFromViewModel()
-        
+
     }
-    
+
     @IBAction func nextBtnDidTapped(_ sender: Any) {
         if viewModel.isValid == true {
             viewModel.excuteAction()
@@ -63,7 +63,7 @@ class LoginScreenVC: UIViewController {
             })
         }
     }
-    
+
     private func bindDataFromViewModel() {
         subsriptions = [
                 inProgressSubsribtion(),
@@ -71,7 +71,7 @@ class LoginScreenVC: UIViewController {
                 onFailureSubscription()
             ]
         }
-    
+
     private func inProgressSubsribtion() -> AnyCancellable {
         return viewModel.inProgress.sink {inProgress in
             DispatchQueue.main.async {
@@ -83,7 +83,7 @@ class LoginScreenVC: UIViewController {
             }
         }
     }
-    
+
     private func onSuccessSubscription() -> AnyCancellable {
         return viewModel.onSuccess.sink {onSuccess in
             if onSuccess == true {
@@ -95,7 +95,7 @@ class LoginScreenVC: UIViewController {
             }
         }
     }
-    
+
     private func onFailureSubscription() -> AnyCancellable {
         return viewModel.onFailure.sink {onFailure in
             DispatchQueue.main.async {
@@ -107,5 +107,5 @@ class LoginScreenVC: UIViewController {
             }
         }
     }
-    
+
 }
