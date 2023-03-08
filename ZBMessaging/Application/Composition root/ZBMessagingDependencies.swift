@@ -7,7 +7,7 @@
 
 import Foundation
 import UIKit
-
+import Combine
 class ZBMessagingDependencies {
     
     var window: UIWindow?
@@ -34,19 +34,25 @@ class ZBMessagingDependencies {
         let isLoggedIn:Bool = true
         
         if isLoggedIn {
-            setRootViewController(LoginScreenVC())
+            setRootViewController(makeLoginViewController())
         } else {
-            
+            setRootViewController(makeMessagesController())
         }
 
     }
     
     func makeLoginViewController() -> UIViewController {
-        let viewController = LoginScreenVC()
+        let router = LoginRouter()
+        let viewController = LoginScreenVC(router: router)
         let navigationController = UINavigationController(rootViewController: viewController)
         navigationController.title = "Login"
-        navigationController.tabBarController?.tabBar.tintColor = .red
+        router.navigationController = navigationController
         return navigationController
+    }
+    
+    func makeMessagesController() -> UIViewController {
+        let viewController = MessagesViewController()
+        return viewController
     }
     
 }

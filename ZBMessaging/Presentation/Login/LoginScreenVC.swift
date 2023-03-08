@@ -28,7 +28,16 @@ class LoginScreenVC: UIViewController {
 
     private var subsriptions = Set<AnyCancellable>()
 
-
+    let router: LoginRouting
+    
+    init(router: LoginRouting) {
+        self.router = router
+        super.init(nibName: "LoginScreenVC", bundle: nil)
+    }
+    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -54,6 +63,7 @@ class LoginScreenVC: UIViewController {
     @IBAction func nextBtnDidTapped(_ sender: Any) {
         if viewModel.isValid == true {
             viewModel.excuteAction()
+            router.routeToMessages()
         } else {
             self.viewModel.brokenRules.map({$0.propertyName}).forEach({ BrokenRule in
                 switch BrokenRule {

@@ -8,9 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7B7B67166EEC2AD7CEBF95AC /* Pods_ZBMessagingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF477999E3570B5C2747F030 /* Pods_ZBMessagingTests.framework */; };
+		829EF20E29B8DDCA005AE8C5 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EF20C29B8DDCA005AE8C5 /* Routing.swift */; };
+		829EF20F29B8DDCA005AE8C5 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EF20D29B8DDCA005AE8C5 /* LoginRouter.swift */; };
 		82CBFC6529B89FE500BC90FE /* ZBMessagingDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFC6429B89FE500BC90FE /* ZBMessagingDependencies.swift */; };
 		82CBFC7629B8ACFB00BC90FE /* LoginScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFC7429B8ACFB00BC90FE /* LoginScreenVC.swift */; };
 		82CBFC7729B8ACFB00BC90FE /* LoginScreenVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82CBFC7529B8ACFB00BC90FE /* LoginScreenVC.xib */; };
+		82CBFC7A29B8BA1100BC90FE /* MessagesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFC7829B8BA1100BC90FE /* MessagesViewController.swift */; };
+		82CBFC7B29B8BA1100BC90FE /* MessagesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 82CBFC7929B8BA1100BC90FE /* MessagesViewController.xib */; };
 		A13BD77ED64E96E736BCAB9A /* Pods_ZBMessaging_ZBMessagingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 604B9163BF7B53649B878B4D /* Pods_ZBMessaging_ZBMessagingUITests.framework */; };
 		B4A94BA1299FCDA000BC0186 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BA0299FCDA000BC0186 /* AppDelegate.swift */; };
 		B4A94BA3299FCDA000BC0186 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B4A94BA2299FCDA000BC0186 /* SceneDelegate.swift */; };
@@ -69,9 +73,13 @@
 /* Begin PBXFileReference section */
 		564FC9021D0CDECB7E9622DA /* Pods_ZBMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		604B9163BF7B53649B878B4D /* Pods_ZBMessaging_ZBMessagingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBMessaging_ZBMessagingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		829EF20C29B8DDCA005AE8C5 /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
+		829EF20D29B8DDCA005AE8C5 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		82CBFC6429B89FE500BC90FE /* ZBMessagingDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBMessagingDependencies.swift; sourceTree = "<group>"; };
 		82CBFC7429B8ACFB00BC90FE /* LoginScreenVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginScreenVC.swift; sourceTree = "<group>"; };
 		82CBFC7529B8ACFB00BC90FE /* LoginScreenVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LoginScreenVC.xib; sourceTree = "<group>"; };
+		82CBFC7829B8BA1100BC90FE /* MessagesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewController.swift; sourceTree = "<group>"; };
+		82CBFC7929B8BA1100BC90FE /* MessagesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MessagesViewController.xib; sourceTree = "<group>"; };
 		ADBC8D4DA6E74CA3C2706A46 /* Pods-ZBMessaging-ZBMessagingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBMessaging-ZBMessagingUITests.release.xcconfig"; path = "Target Support Files/Pods-ZBMessaging-ZBMessagingUITests/Pods-ZBMessaging-ZBMessagingUITests.release.xcconfig"; sourceTree = "<group>"; };
 		B19D1BEEA24095D1344F9445 /* Pods-ZBMessaging.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZBMessaging.debug.xcconfig"; path = "Target Support Files/Pods-ZBMessaging/Pods-ZBMessaging.debug.xcconfig"; sourceTree = "<group>"; };
 		B4A94B9D299FCDA000BC0186 /* ZBMessaging.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZBMessaging.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -146,12 +154,31 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		829EF20B29B8DDCA005AE8C5 /* Routing */ = {
+			isa = PBXGroup;
+			children = (
+				829EF20C29B8DDCA005AE8C5 /* Routing.swift */,
+				829EF20D29B8DDCA005AE8C5 /* LoginRouter.swift */,
+			);
+			name = Routing;
+			path = ZBMessaging/Application/Routing;
+			sourceTree = SOURCE_ROOT;
+		};
 		82CBFC6629B89FF100BC90FE /* Composition root */ = {
 			isa = PBXGroup;
 			children = (
 				82CBFC6429B89FE500BC90FE /* ZBMessagingDependencies.swift */,
 			);
 			path = "Composition root";
+			sourceTree = "<group>";
+		};
+		82CBFC7C29B8BA1E00BC90FE /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				82CBFC7829B8BA1100BC90FE /* MessagesViewController.swift */,
+				82CBFC7929B8BA1100BC90FE /* MessagesViewController.xib */,
+			);
+			path = Messages;
 			sourceTree = "<group>";
 		};
 		B4A94B94299FCDA000BC0186 = {
@@ -215,6 +242,7 @@
 				B4A94BA0299FCDA000BC0186 /* AppDelegate.swift */,
 				B4A94BA2299FCDA000BC0186 /* SceneDelegate.swift */,
 				82CBFC6629B89FF100BC90FE /* Composition root */,
+				829EF20B29B8DDCA005AE8C5 /* Routing */,
 			);
 			path = Application;
 			sourceTree = "<group>";
@@ -223,6 +251,7 @@
 			isa = PBXGroup;
 			children = (
 				B4A94BDE299FD2C700BC0186 /* Login */,
+				82CBFC7C29B8BA1E00BC90FE /* Messages */,
 			);
 			path = Presentation;
 			sourceTree = "<group>";
@@ -446,6 +475,7 @@
 			files = (
 				82CBFC7729B8ACFB00BC90FE /* LoginScreenVC.xib in Resources */,
 				B4A94BAD299FCDA100BC0186 /* LaunchScreen.storyboard in Resources */,
+				82CBFC7B29B8BA1100BC90FE /* MessagesViewController.xib in Resources */,
 				B4A94BAA299FCDA100BC0186 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -577,6 +607,7 @@
 				82CBFC7629B8ACFB00BC90FE /* LoginScreenVC.swift in Sources */,
 				B4A94BFA299FDA8500BC0186 /* AccountDataSourceProtocol.swift in Sources */,
 				B4A94BF6299FDA6000BC0186 /* Models.swift in Sources */,
+				829EF20E29B8DDCA005AE8C5 /* Routing.swift in Sources */,
 				B4A94BFB299FDA8500BC0186 /* AccountDataSourceImp.swift in Sources */,
 				B4A94BF3299FD45E00BC0186 /* AccountRepositoryImp.swift in Sources */,
 				B4A94BEC299FD42500BC0186 /* LoginUseCaseProtocol.swift in Sources */,
@@ -588,6 +619,8 @@
 				B4A94BE2299FD2E500BC0186 /* LoginViewModel.swift in Sources */,
 				82CBFC6529B89FE500BC90FE /* ZBMessagingDependencies.swift in Sources */,
 				B4A94BFE299FDAFE00BC0186 /* UIViewControllerExtension.swift in Sources */,
+				82CBFC7A29B8BA1100BC90FE /* MessagesViewController.swift in Sources */,
+				829EF20F29B8DDCA005AE8C5 /* LoginRouter.swift in Sources */,
 				B4A94BA3299FCDA000BC0186 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
