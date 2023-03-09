@@ -12,7 +12,7 @@ class LoginRouter: LoginRouting {
     
     var navigationController: UINavigationController?
     func routeToMessages() {
-        let vc = ZBMessagingDependencies.shared.makeMessagesController()
+        let vc = ZBMessagingDependencies.shared.makeMessagesViewController()
         vc.modalPresentationStyle = .fullScreen
         navigationController?.pushViewController(vc, animated: true)
     }

@@ -8,6 +8,8 @@
 import Foundation
 import UIKit
 import Combine
+import ZBFramework
+
 class ZBMessagingDependencies {
     
     var window: UIWindow?
@@ -30,17 +32,17 @@ class ZBMessagingDependencies {
     }
     
     public func start() {
-        
-        let isLoggedIn:Bool = true
-        
+        let isLoggedIn = ZBEnvironementManager.accountManager.isConnected
         if isLoggedIn {
-            setRootViewController(makeLoginViewController())
+            setRootViewController(makeMessagesViewController())
         } else {
-            setRootViewController(makeMessagesController())
+            setRootViewController(makeLoginViewController())
         }
 
     }
     
+    /// Create LoginViewController
+    /// - Returns: UIViewController
     func makeLoginViewController() -> UIViewController {
         let router = LoginRouter()
         let viewController = LoginScreenVC(router: router)
@@ -50,7 +52,7 @@ class ZBMessagingDependencies {
         return navigationController
     }
     
-    func makeMessagesController() -> UIViewController {
+    func makeMessagesViewController() -> UIViewController {
         let viewController = MessagesViewController()
         return viewController
     }
