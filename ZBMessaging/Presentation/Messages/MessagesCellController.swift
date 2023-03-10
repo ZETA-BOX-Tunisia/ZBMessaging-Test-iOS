@@ -19,7 +19,6 @@ class MessagesCellController: CellConroller {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: MessageTableViewCell.cellIdentifier, for: indexPath) as! MessageTableViewCell
-        cell.textLabel?.text = "Michael Davis"
 //            cell.configCell(item: model)
         return cell
     }

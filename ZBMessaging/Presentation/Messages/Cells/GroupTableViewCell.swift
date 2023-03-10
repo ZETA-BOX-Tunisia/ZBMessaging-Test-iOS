@@ -9,6 +9,14 @@ import UIKit
 
 class GroupTableViewCell: UITableViewCell {
     
+    @IBOutlet var avatar1Image: UIImageView!
+    @IBOutlet var avatar2Image: UIImageView!
+    @IBOutlet var membersImage: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var bodyMessageLabel: UILabel!
+    @IBOutlet var statusImage1: UIImageView!
+    @IBOutlet var statusImage2: UIImageView!
+    
     static var cellIdentifier = "GroupTableViewCell"
 
     override func awakeFromNib() {

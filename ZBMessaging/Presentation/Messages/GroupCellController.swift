@@ -19,7 +19,7 @@ class GroupCellController: CellConroller {
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: GroupTableViewCell.cellIdentifier, for: indexPath) as! GroupTableViewCell
-        cell.textLabel?.text = "Sunday BBQ"
+//        cell.textLabel?.text = "Sunday BBQ"
 //            cell.configCell(item: model)
         return cell
     }

@@ -22,8 +22,8 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Messages" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontForContentSizeCategory="YES" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="24f-eB-7Oh">
-                    <rect key="frame" x="154.33333333333334" y="103" width="84.666666666666657" height="22.333333333333329"/>
-                    <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="20"/>
+                    <rect key="frame" x="152.66666666666666" y="103" width="88" height="22.333333333333329"/>
+                    <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="20"/>
                     <color key="textColor" red="0.11764705882352941" green="0.59999999999999998" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
                     <nil key="highlightedColor"/>
                 </label>

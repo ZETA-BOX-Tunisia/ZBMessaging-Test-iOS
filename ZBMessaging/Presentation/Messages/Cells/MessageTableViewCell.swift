@@ -9,6 +9,14 @@ import UIKit
 
 class MessageTableViewCell: UITableViewCell {
     
+    // outlets
+    @IBOutlet var avatarImage: UIImageView!
+    @IBOutlet var nameLabel: UILabel!
+    @IBOutlet var bodyMessageLabel: UILabel!
+    @IBOutlet var deliveryImage: UIImageView!
+    
+    @IBOutlet var statusImge: UIImageView!
+    
     static var cellIdentifier = "MessageTableViewCell"
 
     override func awakeFromNib() {

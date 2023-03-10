@@ -9,16 +9,99 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
-        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="GroupTableViewCell" customModule="ZBMessaging" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="119" id="KGk-i7-Jjw" customClass="GroupTableViewCell" customModule="ZBMessaging" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="357" height="119"/>
             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
-                <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                <rect key="frame" x="0.0" y="0.0" width="357" height="119"/>
                 <autoresizingMask key="autoresizingMask"/>
-                <color key="backgroundColor" red="0.1176470588" green="0.59999999999999998" blue="0.86666666670000003" alpha="1" colorSpace="calibratedRGB"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Frame 1096" translatesAutoresizingMaskIntoConstraints="NO" id="vWh-CP-9Pu">
+                        <rect key="frame" x="95" y="34" width="51" height="51"/>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="-14" translatesAutoresizingMaskIntoConstraints="NO" id="hAl-6r-7eY">
+                        <rect key="frame" x="58" y="34" width="51" height="51"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 7" translatesAutoresizingMaskIntoConstraints="NO" id="8DI-6Q-u86">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 9-2" translatesAutoresizingMaskIntoConstraints="NO" id="s17-SE-72o">
+                                <rect key="frame" x="37" y="37" width="14" height="14"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" alignment="bottom" spacing="-15" translatesAutoresizingMaskIntoConstraints="NO" id="wcK-Tb-Hcc">
+                        <rect key="frame" x="22" y="34" width="50" height="51"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="image 6" translatesAutoresizingMaskIntoConstraints="NO" id="Gkt-Kd-S7R">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="51"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Ellipse 9" translatesAutoresizingMaskIntoConstraints="NO" id="bqd-i0-ss8">
+                                <rect key="frame" x="36" y="37" width="14" height="14"/>
+                            </imageView>
+                        </subviews>
+                    </stackView>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hyD-y5-wOQ">
+                        <rect key="frame" x="22" y="119" width="313" height="1"/>
+                        <color key="backgroundColor" red="0.57647058823529407" green="0.63529411764705879" blue="0.71764705882352942" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="1" id="WHb-Uj-gQC"/>
+                        </constraints>
+                    </view>
+                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="v6s-7P-lkt">
+                        <rect key="frame" x="156" y="34" width="188.66666666666663" height="51"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Sunday BBQ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="U2n-k9-N2f">
+                                <rect key="frame" x="0.0" y="0.0" width="100.66666666666667" height="19"/>
+                                <fontDescription key="fontDescription" name="Palatino-Bold" family="Palatino" pointSize="17"/>
+                                <color key="textColor" red="0.27843137254901962" green="0.33333333333333331" blue="0.41176470588235292" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Looking forward to it. See you" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iPO-AF-PME">
+                                <rect key="frame" x="0.0" y="25" width="188.66666666666666" height="26"/>
+                                <fontDescription key="fontDescription" name="Palatino-Roman" family="Palatino" pointSize="14"/>
+                                <color key="textColor" red="0.11764705882352941" green="0.59999999999999998" blue="0.8666666666666667" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                    </stackView>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="vWh-CP-9Pu" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="34" id="3Il-k1-PZr"/>
+                    <constraint firstItem="wcK-Tb-Hcc" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="34" id="86V-CN-iq5"/>
+                    <constraint firstItem="wcK-Tb-Hcc" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="CLe-qu-IWh"/>
+                    <constraint firstItem="hAl-6r-7eY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="58" id="Cjz-1u-tp4"/>
+                    <constraint firstItem="v6s-7P-lkt" firstAttribute="leading" secondItem="vWh-CP-9Pu" secondAttribute="trailing" constant="10" id="F7c-Tr-VFK"/>
+                    <constraint firstItem="vWh-CP-9Pu" firstAttribute="leading" secondItem="wcK-Tb-Hcc" secondAttribute="trailing" constant="23" id="LUR-h3-B7n"/>
+                    <constraint firstItem="hyD-y5-wOQ" firstAttribute="top" secondItem="v6s-7P-lkt" secondAttribute="bottom" constant="34" id="QO5-H3-x9G"/>
+                    <constraint firstItem="hAl-6r-7eY" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="34" id="RP1-Qg-xlf"/>
+                    <constraint firstAttribute="bottom" secondItem="wcK-Tb-Hcc" secondAttribute="bottom" constant="34" id="UpD-hS-A5C"/>
+                    <constraint firstAttribute="bottom" secondItem="vWh-CP-9Pu" secondAttribute="bottom" constant="34" id="bMd-LX-qKd"/>
+                    <constraint firstItem="hyD-y5-wOQ" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="cRu-hl-njh"/>
+                    <constraint firstAttribute="bottom" secondItem="hAl-6r-7eY" secondAttribute="bottom" constant="34" id="eeI-pm-NCA"/>
+                    <constraint firstAttribute="trailing" secondItem="hyD-y5-wOQ" secondAttribute="trailing" constant="22" id="lvR-L5-QbQ"/>
+                    <constraint firstItem="hyD-y5-wOQ" firstAttribute="top" secondItem="vWh-CP-9Pu" secondAttribute="bottom" constant="34" id="nF0-xg-Jke"/>
+                    <constraint firstItem="v6s-7P-lkt" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="34" id="qog-gB-ouq"/>
+                </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
-            <point key="canvasLocation" x="131" y="-11"/>
+            <connections>
+                <outlet property="avatar1Image" destination="Gkt-Kd-S7R" id="Olc-dF-vw3"/>
+                <outlet property="avatar2Image" destination="8DI-6Q-u86" id="4bg-gq-RTT"/>
+                <outlet property="bodyMessageLabel" destination="iPO-AF-PME" id="2tk-vN-Y6n"/>
+                <outlet property="membersImage" destination="vWh-CP-9Pu" id="tWf-W3-Wv3"/>
+                <outlet property="nameLabel" destination="U2n-k9-N2f" id="g7w-Tn-Ff0"/>
+                <outlet property="statusImage1" destination="bqd-i0-ss8" id="E84-ri-LY0"/>
+                <outlet property="statusImage2" destination="s17-SE-72o" id="8va-vV-JhJ"/>
+            </connections>
+            <point key="canvasLocation" x="101.5267175572519" y="15.140845070422536"/>
         </tableViewCell>
     </objects>
+    <resources>
+        <image name="Ellipse 9" width="14" height="14"/>
+        <image name="Ellipse 9-2" width="14" height="14"/>
+        <image name="Frame 1096" width="51" height="51"/>
+        <image name="image 6" width="51" height="51"/>
+        <image name="image 7" width="51" height="51"/>
+    </resources>
 </document>
