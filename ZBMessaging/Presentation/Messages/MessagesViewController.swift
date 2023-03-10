@@ -1,0 +1,44 @@
+//
+//  MessagesViewController.swift
+//  ZBMessaging
+//
+//  Created by Khalil Mhelheli on 9/3/2023.
+//
+
+import UIKit
+
+class MessagesViewController: UIViewController {
+    
+    // outlets
+    @IBOutlet var tableView: UITableView!
+    @IBOutlet var editButton: UIButton!
+    @IBOutlet var searchButton: UIButton!
+    
+    private var data: [CellConroller] = []
+    
+    // life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.delegate = self
+        tableView.dataSource = self
+        data.append(GroupCellController(group: Group(name: "Sunday BBQ", body: "fdfsd")))
+        data.append(MessagesCellController(model: Message(name: "Michael Davis", body: "fdfsd")))
+        MessagesCellController.configure(tableView: tableView)
+        GroupCellController.configure(tableView: tableView)
+    }
+    
+}
+
+
+extension MessagesViewController: UITableViewDataSource, UITableViewDelegate {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return data.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let controller = data[indexPath.row]
+        return controller.tableView(tableView, cellForRowAt: indexPath)
+    }
+    
+    
+}
