@@ -53,8 +53,15 @@ class ZBMessagingDependencies {
     }
     
     func makeMessagesViewController() -> UIViewController {
-        let viewController = MessagesViewController()
+//        let messageUseCase = MessageUseCaseImpl(messagesRepositoryProtocol: MessageUseCaseImpl(messagesRepositoryProtocol: MessagesDataSourceImpl()))
+        let messageDataSourceImpl = MessagesDataSourceImpl()
+        let messageRepositoryImpl = MessagesRepositoryImpl(messagesRepositoryProtocol: messageDataSourceImpl)
+        let messageUseCaseImpl = MessageUseCaseImpl(messagesRepositoryProtocol: messageRepositoryImpl)
+        let viewModel = MessagesViewControllerViewModel(messagesUseCase: messageUseCaseImpl)
+        let viewController = MessagesViewController(viewModel: viewModel)
         return viewController
     }
     
+    
+    var viewModel = LoginViewModel(loginUseCase: LoginUseCaseImpl(accountRepositoryProtocol: AccountRepositoryImpl(accountDataSourceProtocol: AccountDataSourceImpl())))
 }

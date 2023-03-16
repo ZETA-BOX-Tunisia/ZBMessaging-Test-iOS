@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		7B7B67166EEC2AD7CEBF95AC /* Pods_ZBMessagingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF477999E3570B5C2747F030 /* Pods_ZBMessagingTests.framework */; };
+		82038B6829C1D2ED009707F0 /* MessagesViewControllerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82038B6729C1D2ED009707F0 /* MessagesViewControllerViewModel.swift */; };
+		82038B6A29C1D4E1009707F0 /* MessagesUseCaseProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82038B6929C1D4E1009707F0 /* MessagesUseCaseProtocol.swift */; };
+		82038B6C29C1D4F5009707F0 /* MessageUseCaseImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82038B6B29C1D4F5009707F0 /* MessageUseCaseImpl.swift */; };
+		8271CC8629C303CC000061C4 /* MessagesRepositoryProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271CC8529C303CC000061C4 /* MessagesRepositoryProtocol.swift */; };
+		8271CC8829C303E0000061C4 /* MessagesRepositoryImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271CC8729C303E0000061C4 /* MessagesRepositoryImpl.swift */; };
+		8271CC8B29C304AA000061C4 /* MessagesDataSourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271CC8A29C304AA000061C4 /* MessagesDataSourceProtocol.swift */; };
+		8271CC8D29C304C2000061C4 /* MessagesDataSourceImpl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8271CC8C29C304C2000061C4 /* MessagesDataSourceImpl.swift */; };
 		829EF20E29B8DDCA005AE8C5 /* Routing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EF20C29B8DDCA005AE8C5 /* Routing.swift */; };
 		829EF20F29B8DDCA005AE8C5 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 829EF20D29B8DDCA005AE8C5 /* LoginRouter.swift */; };
 		82CBFC6529B89FE500BC90FE /* ZBMessagingDependencies.swift in Sources */ = {isa = PBXBuildFile; fileRef = 82CBFC6429B89FE500BC90FE /* ZBMessagingDependencies.swift */; };
@@ -80,6 +87,13 @@
 /* Begin PBXFileReference section */
 		564FC9021D0CDECB7E9622DA /* Pods_ZBMessaging.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBMessaging.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		604B9163BF7B53649B878B4D /* Pods_ZBMessaging_ZBMessagingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ZBMessaging_ZBMessagingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		82038B6729C1D2ED009707F0 /* MessagesViewControllerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesViewControllerViewModel.swift; sourceTree = "<group>"; };
+		82038B6929C1D4E1009707F0 /* MessagesUseCaseProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesUseCaseProtocol.swift; sourceTree = "<group>"; };
+		82038B6B29C1D4F5009707F0 /* MessageUseCaseImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageUseCaseImpl.swift; sourceTree = "<group>"; };
+		8271CC8529C303CC000061C4 /* MessagesRepositoryProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesRepositoryProtocol.swift; sourceTree = "<group>"; };
+		8271CC8729C303E0000061C4 /* MessagesRepositoryImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesRepositoryImpl.swift; sourceTree = "<group>"; };
+		8271CC8A29C304AA000061C4 /* MessagesDataSourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesDataSourceProtocol.swift; sourceTree = "<group>"; };
+		8271CC8C29C304C2000061C4 /* MessagesDataSourceImpl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagesDataSourceImpl.swift; sourceTree = "<group>"; };
 		829EF20C29B8DDCA005AE8C5 /* Routing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Routing.swift; sourceTree = "<group>"; };
 		829EF20D29B8DDCA005AE8C5 /* LoginRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
 		82CBFC6429B89FE500BC90FE /* ZBMessagingDependencies.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ZBMessagingDependencies.swift; sourceTree = "<group>"; };
@@ -168,6 +182,33 @@
 			path = Pods;
 			sourceTree = "<group>";
 		};
+		82038B6629C1D297009707F0 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				82F1266929BA23DB002088E7 /* MessagesCellController.swift */,
+				82F1266D29BA29F0002088E7 /* GroupCellController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		82038B6D29C1D4FB009707F0 /* MessagesUseCase */ = {
+			isa = PBXGroup;
+			children = (
+				82038B6929C1D4E1009707F0 /* MessagesUseCaseProtocol.swift */,
+				82038B6B29C1D4F5009707F0 /* MessageUseCaseImpl.swift */,
+			);
+			path = MessagesUseCase;
+			sourceTree = "<group>";
+		};
+		8271CC8929C303E9000061C4 /* MessagesRepo */ = {
+			isa = PBXGroup;
+			children = (
+				8271CC8529C303CC000061C4 /* MessagesRepositoryProtocol.swift */,
+				8271CC8729C303E0000061C4 /* MessagesRepositoryImpl.swift */,
+			);
+			path = MessagesRepo;
+			sourceTree = "<group>";
+		};
 		829EF20B29B8DDCA005AE8C5 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
@@ -189,10 +230,10 @@
 		82CBFC7C29B8BA1E00BC90FE /* Messages */ = {
 			isa = PBXGroup;
 			children = (
-				82F1266929BA23DB002088E7 /* MessagesCellController.swift */,
-				82F1266D29BA29F0002088E7 /* GroupCellController.swift */,
 				82E5D32929B9F3E4000B200A /* MessagesViewController.swift */,
 				82E5D32A29B9F3E4000B200A /* MessagesViewController.xib */,
+				82038B6729C1D2ED009707F0 /* MessagesViewControllerViewModel.swift */,
+				82038B6629C1D297009707F0 /* ViewController */,
 				82F1266829BA1554002088E7 /* Cells */,
 			);
 			path = Messages;
@@ -297,6 +338,8 @@
 		B4A94BDD299FD29D00BC0186 /* Data */ = {
 			isa = PBXGroup;
 			children = (
+				8271CC8A29C304AA000061C4 /* MessagesDataSourceProtocol.swift */,
+				8271CC8C29C304C2000061C4 /* MessagesDataSourceImpl.swift */,
 				B4A94BF7299FDA8500BC0186 /* AccountDataSource */,
 			);
 			path = Data;
@@ -326,6 +369,7 @@
 			isa = PBXGroup;
 			children = (
 				B4A94BE9299FD42500BC0186 /* LoginUseCase */,
+				82038B6D29C1D4FB009707F0 /* MessagesUseCase */,
 			);
 			path = UseCase;
 			sourceTree = "<group>";
@@ -342,6 +386,7 @@
 		B4A94BEE299FD45E00BC0186 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				8271CC8929C303E9000061C4 /* MessagesRepo */,
 				B4A94BEF299FD45E00BC0186 /* AccountRepo */,
 			);
 			path = Repository;
@@ -646,18 +691,25 @@
 				B4A94BF3299FD45E00BC0186 /* AccountRepositoryImp.swift in Sources */,
 				B4A94BEC299FD42500BC0186 /* LoginUseCaseProtocol.swift in Sources */,
 				B4A94BE6299FD35B00BC0186 /* BindingTextField.swift in Sources */,
+				8271CC8D29C304C2000061C4 /* MessagesDataSourceImpl.swift in Sources */,
+				8271CC8629C303CC000061C4 /* MessagesRepositoryProtocol.swift in Sources */,
 				B4A94BF2299FD45E00BC0186 /* AccountRepositoryProtocol.swift in Sources */,
 				B4A94BE7299FD35B00BC0186 /* Dynamic.swift in Sources */,
 				B4A94BA1299FCDA000BC0186 /* AppDelegate.swift in Sources */,
+				82038B6A29C1D4E1009707F0 /* MessagesUseCaseProtocol.swift in Sources */,
 				82F1266E29BA29F0002088E7 /* GroupCellController.swift in Sources */,
 				B4A94BED299FD42500BC0186 /* LoginUseCaseImpl.swift in Sources */,
 				82E5D32B29B9F3E4000B200A /* MessagesViewController.swift in Sources */,
 				B4A94BE2299FD2E500BC0186 /* LoginViewModel.swift in Sources */,
+				8271CC8829C303E0000061C4 /* MessagesRepositoryImpl.swift in Sources */,
 				82CBFC6529B89FE500BC90FE /* ZBMessagingDependencies.swift in Sources */,
+				8271CC8B29C304AA000061C4 /* MessagesDataSourceProtocol.swift in Sources */,
 				B4A94BFE299FDAFE00BC0186 /* UIViewControllerExtension.swift in Sources */,
 				829EF20F29B8DDCA005AE8C5 /* LoginRouter.swift in Sources */,
+				82038B6829C1D2ED009707F0 /* MessagesViewControllerViewModel.swift in Sources */,
 				B4A94BA3299FCDA000BC0186 /* SceneDelegate.swift in Sources */,
 				82F1266629BA154C002088E7 /* GroupTableViewCell.swift in Sources */,
+				82038B6C29C1D4F5009707F0 /* MessageUseCaseImpl.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

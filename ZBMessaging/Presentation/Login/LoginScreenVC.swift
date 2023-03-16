@@ -63,7 +63,7 @@ class LoginScreenVC: UIViewController {
     @IBAction func nextBtnDidTapped(_ sender: Any) {
         if viewModel.isValid == true {
             viewModel.excuteAction()
-            router.routeToMessages()
+//            router.routeToMessages()
         } else {
             self.viewModel.brokenRules.map({$0.propertyName}).forEach({ BrokenRule in
                 switch BrokenRule {
@@ -98,8 +98,9 @@ class LoginScreenVC: UIViewController {
         return viewModel.onSuccess.sink {onSuccess in
             if onSuccess == true {
                 DispatchQueue.main.async {
-                    self.showOrHideLoader(done: true) {
-                        self.showAlert(title: "Login successful", message: "Hello. Welcome to the app!")
+                    self.showOrHideLoader(done: true) { [weak self] in
+                        self?.showAlert(title: "Login successful", message: "Hello. Welcome to the app!")
+                        self?.router.routeToMessages()
                     }
                 }
             }
