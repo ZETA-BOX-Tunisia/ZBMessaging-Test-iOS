@@ -209,6 +209,15 @@
 			path = MessagesRepo;
 			sourceTree = "<group>";
 		};
+		8271CC8E29C362ED000061C4 /* MessagesDataSource */ = {
+			isa = PBXGroup;
+			children = (
+				8271CC8A29C304AA000061C4 /* MessagesDataSourceProtocol.swift */,
+				8271CC8C29C304C2000061C4 /* MessagesDataSourceImpl.swift */,
+			);
+			path = MessagesDataSource;
+			sourceTree = "<group>";
+		};
 		829EF20B29B8DDCA005AE8C5 /* Routing */ = {
 			isa = PBXGroup;
 			children = (
@@ -338,9 +347,8 @@
 		B4A94BDD299FD29D00BC0186 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				8271CC8A29C304AA000061C4 /* MessagesDataSourceProtocol.swift */,
-				8271CC8C29C304C2000061C4 /* MessagesDataSourceImpl.swift */,
 				B4A94BF7299FDA8500BC0186 /* AccountDataSource */,
+				8271CC8E29C362ED000061C4 /* MessagesDataSource */,
 			);
 			path = Data;
 			sourceTree = "<group>";
@@ -386,8 +394,8 @@
 		B4A94BEE299FD45E00BC0186 /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				8271CC8929C303E9000061C4 /* MessagesRepo */,
 				B4A94BEF299FD45E00BC0186 /* AccountRepo */,
+				8271CC8929C303E9000061C4 /* MessagesRepo */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
