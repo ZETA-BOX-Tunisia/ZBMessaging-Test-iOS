@@ -32,6 +32,7 @@ class MessagesViewController: UIViewController {
         super.viewDidLoad()
         tableView.delegate = self
         tableView.dataSource = self
+        viewModel.excuteAction()
         data.append(GroupCellController(group: Group(name: "Sunday BBQ", body: "fdfsd")))
         data.append(GroupCellController(group: Group(name: "Sunday BBQ", body: "fdfsd")))
         data.append(GroupCellController(group: Group(name: "Sunday BBQ", body: "fdfsd")))

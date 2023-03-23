@@ -6,11 +6,13 @@
 //
 
 import Foundation
+import ZBFramework
 
 protocol MessagesUseCaseProtocol: MessagesUseCaseProtocolOutput {
     
+    func execute(start: Int?, limit: Int?) async
 }
 
 protocol MessagesUseCaseProtocolOutput {
-    
+    var contactList: Published<[ZBFramework.UsersPermissionsUser]>.Publisher {get}
 }

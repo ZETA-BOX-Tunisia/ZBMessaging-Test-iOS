@@ -15,4 +15,12 @@ class MessagesViewControllerViewModel {
         self.messagesUseCase = messagesUseCase
     }
     
+    
+    func excuteAction() {
+        Task {
+            await
+            self.messagesUseCase.execute(start: 1, limit: 10)
+        }
+        
+    }
 }
