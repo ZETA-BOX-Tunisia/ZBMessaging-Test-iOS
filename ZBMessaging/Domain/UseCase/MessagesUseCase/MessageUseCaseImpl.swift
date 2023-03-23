@@ -24,10 +24,15 @@ class MessageUseCaseImpl: MessagesUseCaseProtocol {
 
     init(messagesRepositoryProtocol: MessagesRepositoryProtocol){
         self.messagesRepositoryProtocol = messagesRepositoryProtocol
+        self.ObserveMessagesResponse()
     }
     
     func execute(start: Int?, limit: Int?) async {
         await self.messagesRepositoryProtocol.getContactList(start: 1, limit: 10)
+    }
+    
+    private func ObserveMessagesResponse() {
+        subsriptions = [onSuccessContactsResponseSubscribtion()]
     }
     
     private func onSuccessContactsResponseSubscribtion() -> AnyCancellable {
