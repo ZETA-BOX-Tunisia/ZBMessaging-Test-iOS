@@ -19,3 +19,14 @@ struct MessageRequestModel {
     var start: Int?
     var limit: Int?
 }
+
+
+struct Message {
+    var name: String
+    var body: String
+}
+
+struct Group {
+    var name: String
+    var body: String
+}

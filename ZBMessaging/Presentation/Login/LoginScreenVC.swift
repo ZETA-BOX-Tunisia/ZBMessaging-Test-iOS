@@ -10,8 +10,8 @@ import Combine
 import UIKit
 
 class LoginScreenVC: UIViewController {
-    
-    
+
+
     @IBOutlet weak var identifierTxtField: BindingTextField! {
         didSet {
             self.identifierTxtField.bind(callback: {self.viewModel.identifierValue.value = $0 })
@@ -23,37 +23,47 @@ class LoginScreenVC: UIViewController {
         }
     }
     @IBOutlet weak var nextBtn: UIButton!
-    
+
     var viewModel = LoginViewModel(loginUseCase: LoginUseCaseImpl(accountRepositoryProtocol: AccountRepositoryImpl(accountDataSourceProtocol: AccountDataSourceImpl())))
-    
+
     private var subsriptions = Set<AnyCancellable>()
+
+    let router: LoginRouting
     
+    init(router: LoginRouting) {
+        self.router = router
+        super.init(nibName: "LoginScreenVC", bundle: nil)
+    }
     
-    
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         initView()
     }
-    
+
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        
+
         self.navigationController?.isNavigationBarHidden = true
 
     }
-    
+
     func initView() {
         nextBtn.layer.cornerRadius = 15
         identifierTxtField.setLeftPaddingPoints(10)
         passwordTextField.setLeftPaddingPoints(10)
-        
+
         bindDataFromViewModel()
-        
+
     }
-    
+
     @IBAction func nextBtnDidTapped(_ sender: Any) {
         if viewModel.isValid == true {
             viewModel.excuteAction()
+//            router.routeToMessages()
         } else {
             self.viewModel.brokenRules.map({$0.propertyName}).forEach({ BrokenRule in
                 switch BrokenRule {
@@ -63,7 +73,7 @@ class LoginScreenVC: UIViewController {
             })
         }
     }
-    
+
     private func bindDataFromViewModel() {
         subsriptions = [
                 inProgressSubsribtion(),
@@ -71,7 +81,7 @@ class LoginScreenVC: UIViewController {
                 onFailureSubscription()
             ]
         }
-    
+
     private func inProgressSubsribtion() -> AnyCancellable {
         return viewModel.inProgress.sink {inProgress in
             DispatchQueue.main.async {
@@ -83,19 +93,20 @@ class LoginScreenVC: UIViewController {
             }
         }
     }
-    
+
     private func onSuccessSubscription() -> AnyCancellable {
         return viewModel.onSuccess.sink {onSuccess in
             if onSuccess == true {
                 DispatchQueue.main.async {
-                    self.showOrHideLoader(done: true) {
-                        self.showAlert(title: "Login successful", message: "Hello. Welcome to the app!")
+                    self.showOrHideLoader(done: true) { [weak self] in
+                        self?.showAlert(title: "Login successful", message: "Hello. Welcome to the app!")
+                        self?.router.routeToMessages()
                     }
                 }
             }
         }
     }
-    
+
     private func onFailureSubscription() -> AnyCancellable {
         return viewModel.onFailure.sink {onFailure in
             DispatchQueue.main.async {
@@ -107,5 +118,5 @@ class LoginScreenVC: UIViewController {
             }
         }
     }
-    
+
 }
